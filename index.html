@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIA GEEK</title>
+    <link rel="shortcut icon" href="img/hipster.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            padding-bottom: 3rem; /* Espaço para o footer fixo */
+        }
+        header {
+            background-color: #771010;
+            color: white;
+            padding: 1rem 0;
+        }
+        header h1 {
+            font-size: 2rem;
+        }
+        .cards .card {
+            transition: transform 0.3s;
+        }
+        .cards .card:hover {
+            transform: translateY(-5px);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 10; /* Garantir que o footer fique acima do conteúdo */
+        }
+        .location {
+            margin: 1rem 0; /* Ajustar o espaçamento superior */
+        }
+        .card-image img {
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 1rem; /* Adiciona o espaçamento entre a foto e o "Saiba mais" */
+        }
+
+        /* Estilo para os ícones nos cards */
+        .card-title i {
+            margin-right: 10px; /* Espaço entre o ícone e o texto */
+            color: #ff7043; /* Cor personalizada para os ícones */
+            transition: color 0.3s ease; /* Transição suave para a cor */
+        }
+
+        /* Efeito de hover para os ícones */
+        .card-title i:hover {
+            color: #ff5722; /* Cor mais intensa no hover */
+        }
+
+        hr {
+            color: #771010;
+        }
+    </style>
+</head>
+<body>
+    <header class="center-align">
+        <h1>DIA GEEK</h1>
+        <p>Venha participar do maior evento geek da região!</p>
+    </header>
+
+    <!-- Barra de navegação -->
+    <nav>
+        <div class="nav-wrapper" style="background-color: #771010;">
+            <ul id="nav-mobile" class="center-align">
+                <li><a href="#">Campeonatos</a></li>
+                <li><a href="#">Atrações</a></li>
+                <li><a href="#">Programação</a></li>
+                <li><a href="#">Convide alguém!</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="location center-align">
+            <h5>Informações do Evento</h5>
+            <hr>
+            <p><img src="img/place.png" width="20px" height="20px">Instituto Federal Farroupilha - Campus Uruguaiana</p>
+            <p><img src="img/calendar.png" width="20px" height="20px"> 25/01/2025</p>
+            <p><img src="img/clock.png" width="20px" height="20px">08:00h - 12:00h</p>
+        </div>
+
+        <div class="row cards">
+            <div class="col s12 m6 l4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/mk9.jpg" alt="Games">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title"><i class="fas fa-trophy"></i>  Mortal Kombat 9</span>
+                    </div>
+                    <div class="card-action center">
+                        <a href="#">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/MK11.png" alt="Cosplay">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title"><i class="fas fa-trophy"></i>  Mortal Kombat 11</span>
+                    </div>
+                    <div class="card-action center">
+                        <a href="#">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/cs.png" alt="Quadrinhos">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title"><i class="fas fa-trophy"></i>  Counter Strike 1.6</span>
+                    </div>
+                    <div class="card-action center">
+                        <a href="#">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/dragonboll.png" alt="Cultura Pop">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title"><i class="fas fa-trophy"></i>Dragon Ball Budokai Tenkaichi 3</span>
+                    </div>
+                    <div class="card-action center">
+                        <a href="#">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/freefire.png" alt="Workshops">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title"><i class="fas fa-trophy"></i>  Free Fire</span>
+                    </div>
+                    <div class="card-action center">
+                        <a href="#">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/cosplay.png" alt="Loja Geek">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title"><i class="fas fa-trophy"></i> Concurso de Cosplay</span>
+                    </div>
+                    <div class="card-action center">
+                        <a href="#">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 DIA GEEK - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
