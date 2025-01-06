@@ -38,6 +38,20 @@
             left: 0;
             width: 100%;
             z-index: 10; /* Garantir que o footer fique acima do conteúdo */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        footer .logo {
+            margin-bottom: 1rem;
+        }
+        footer .social-icons {
+            margin: 1rem 0;
+        }
+        footer .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5rem;
         }
         .location {
             margin: 1rem 0; /* Ajustar o espaçamento superior */
@@ -63,6 +77,7 @@
         hr {
             color: #771010;
         }
+
     </style>
 </head>
 <body>
@@ -73,7 +88,7 @@
 
     <!-- Barra de navegação -->
     <nav>
-        <div class="nav-wrapper" style="background-color: #771010;">
+        <div class="nav-wrapper " style="background-color: #771010;">
             <ul id="nav-mobile" class="center-align">
                 <li><a href="#">Campeonatos</a></li>
                 <li><a href="#">Atrações</a></li>
@@ -175,6 +190,17 @@
     </div>
 
     <footer>
+        <!-- Logo -->
+        <div class="logo">
+            <img src="img/logoIFF.png" alt="Logo" width="300px" 
+            > <!-- Substitua 'logo.png' pelo arquivo da sua logo -->
+        </div>
+
+        <!-- Informações de Contato e Redes Sociais -->
+        <div class="social-icons">
+            <a href="https://www.instagram.com/info31.iffar" class="fab fa-instagram"></a>
+        </div>
+
         <p>&copy; 2025 DIA GEEK - Todos os direitos reservados</p>
     </footer>
 
